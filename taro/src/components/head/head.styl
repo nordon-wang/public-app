@@ -1,26 +1,43 @@
+height = 260px
+
 .head{
-  .head-info{
-    display flex
-    flex-direction: row
-    // justify-content: space-between
+  position relative
+  height: height
+
+  .menu-header{
+    width: 100%
+    height: height
+    z-index: 1
+  }
+
+  &-position{
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    width: 100%
+    height height
+    display: flex
+    flex-direction: column
     align-items: center
-    font-size: 14px
+    padding-top: 20px
+    color: #fff
 
-    .head-info-r{
-      margin-left: 20px
-
-      .head-info-r-items{
-        height: 42px  
-        line-height: 42px  
-      }
-      
-      .head-info-tags{
-        margin-right: 20px  
-      }
+    &-items{
+      margin-bottom: 20px
     }
-    .img{
-      width: 140px
-      height: 140px
+
+    &-title{
+      font-size: 20Px
+    }
+
+    &-notice,
+    &-tags{
+      font-size: 14PX
+    }
+
+    &-tags-items{
+      margin-right: 22px
     }
   }
 }
